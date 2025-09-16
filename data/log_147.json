@@ -1,0 +1,162 @@
+[
+  {
+    "timestamp": "2025-09-17T00:30:00.000000",
+    "app_name": "JobRunner",
+    "elapse_time": 3456,
+    "user_ip": "192.168.115.203",
+    "cfg_path": "cfgC",
+    "sql": "SELECT user_id, COUNT(*) AS event_count FROM events WHERE user_id = 99 GROUP BY user_id HAVING COUNT(*) > 5"
+  },
+  {
+    "timestamp": "2025-09-17T00:30:00.000000",
+    "app_name": "ETLService",
+    "elapse_time": 4232,
+    "user_ip": "192.168.184.67",
+    "cfg_path": "cfgC",
+    "sql": "UPDATE logs l SET data = 'sample-304', updated_at = NOW() WHERE l.user_id = 316 AND EXISTS (SELECT 1 FROM events e WHERE e.user_id = l.user_id AND e.payload LIKE '%sample-304%')"
+  },
+  {
+    "timestamp": "2025-09-17T00:30:00.000000",
+    "app_name": "ETLService",
+    "elapse_time": 3613,
+    "user_ip": "192.168.98.97",
+    "cfg_path": "cfgA",
+    "sql": "SELECT * FROM logs WHERE user_id IN (SELECT user_id FROM events WHERE payload LIKE '%sample-875%')"
+  },
+  {
+    "timestamp": "2025-09-17T00:30:00.000000",
+    "app_name": "JobRunner",
+    "elapse_time": 362,
+    "user_ip": "192.168.46.126",
+    "cfg_path": "cfgB",
+    "sql": "SELECT l.user_id, l.data, e.event_id, e.payload FROM logs l JOIN events e ON l.user_id = e.user_id WHERE l.user_id = 411 AND e.created_at >= NOW() - INTERVAL '7 DAY'"
+  },
+  {
+    "timestamp": "2025-09-17T00:30:00.000000",
+    "app_name": "JobRunner",
+    "elapse_time": 3908,
+    "user_ip": "192.168.134.27",
+    "cfg_path": "cfgA",
+    "sql": "SELECT * FROM logs WHERE user_id IN (SELECT user_id FROM events WHERE payload LIKE '%sample-560%')"
+  },
+  {
+    "timestamp": "2025-09-17T00:30:00.000000",
+    "app_name": "ETLService",
+    "elapse_time": 1959,
+    "user_ip": "192.168.22.36",
+    "cfg_path": "cfgC",
+    "sql": "SELECT event_id, payload FROM events WHERE user_id = 292 ORDER BY created_at DESC LIMIT 10 OFFSET 49"
+  },
+  {
+    "timestamp": "2025-09-17T00:30:00.000000",
+    "app_name": "DataProcessor",
+    "elapse_time": 4915,
+    "user_ip": "192.168.175.118",
+    "cfg_path": "cfgA",
+    "sql": "SELECT * FROM logs WHERE user_id IN (SELECT user_id FROM events WHERE payload LIKE '%sample-845%')"
+  },
+  {
+    "timestamp": "2025-09-17T00:30:00.000000",
+    "app_name": "JobRunner",
+    "elapse_time": 3051,
+    "user_ip": "192.168.0.91",
+    "cfg_path": "cfgC",
+    "sql": "SELECT * FROM logs WHERE user_id IN (SELECT user_id FROM events WHERE payload LIKE '%sample-417%')"
+  },
+  {
+    "timestamp": "2025-09-17T00:30:00.000000",
+    "app_name": "DataProcessor",
+    "elapse_time": 910,
+    "user_ip": "192.168.14.181",
+    "cfg_path": "cfgA",
+    "sql": "SELECT event_id, payload FROM events WHERE user_id = 239 ORDER BY created_at DESC LIMIT 10 OFFSET 58"
+  },
+  {
+    "timestamp": "2025-09-17T00:30:00.000000",
+    "app_name": "ETLService",
+    "elapse_time": 3431,
+    "user_ip": "192.168.7.37",
+    "cfg_path": "cfgA",
+    "sql": "SELECT user_id, COUNT(*) AS event_count FROM events WHERE user_id = 346 GROUP BY user_id HAVING COUNT(*) > 5"
+  },
+  {
+    "timestamp": "2025-09-17T00:30:00.000000",
+    "app_name": "ETLService",
+    "elapse_time": 3942,
+    "user_ip": "192.168.179.223",
+    "cfg_path": "cfgB",
+    "sql": "SELECT * FROM logs WHERE user_id IN (SELECT user_id FROM events WHERE payload LIKE '%sample-954%')"
+  },
+  {
+    "timestamp": "2025-09-17T00:30:00.000000",
+    "app_name": "ETLService",
+    "elapse_time": 3231,
+    "user_ip": "192.168.179.80",
+    "cfg_path": "cfgB",
+    "sql": "SELECT * FROM logs WHERE user_id = 342"
+  },
+  {
+    "timestamp": "2025-09-17T00:30:00.000000",
+    "app_name": "ETLService",
+    "elapse_time": 1647,
+    "user_ip": "192.168.216.185",
+    "cfg_path": "cfgB",
+    "sql": "SELECT event_id, payload FROM events WHERE user_id = 71 ORDER BY created_at DESC LIMIT 10 OFFSET 85"
+  },
+  {
+    "timestamp": "2025-09-17T00:30:00.000000",
+    "app_name": "DataProcessor",
+    "elapse_time": 4894,
+    "user_ip": "192.168.102.182",
+    "cfg_path": "cfgB",
+    "sql": "UPDATE logs l SET data = 'sample-839', updated_at = NOW() WHERE l.user_id = 301 AND EXISTS (SELECT 1 FROM events e WHERE e.user_id = l.user_id AND e.payload LIKE '%sample-839%')"
+  },
+  {
+    "timestamp": "2025-09-17T00:30:00.000000",
+    "app_name": "ETLService",
+    "elapse_time": 2890,
+    "user_ip": "192.168.77.212",
+    "cfg_path": "cfgB",
+    "sql": "SELECT * FROM logs WHERE user_id = 339"
+  },
+  {
+    "timestamp": "2025-09-17T00:30:00.000000",
+    "app_name": "ETLService",
+    "elapse_time": 2026,
+    "user_ip": "192.168.202.84",
+    "cfg_path": "cfgC",
+    "sql": "SELECT * FROM logs WHERE user_id = 62"
+  },
+  {
+    "timestamp": "2025-09-17T00:30:00.000000",
+    "app_name": "DataProcessor",
+    "elapse_time": 3709,
+    "user_ip": "192.168.222.248",
+    "cfg_path": "cfgA",
+    "sql": "SELECT * FROM logs WHERE user_id IN (SELECT user_id FROM events WHERE payload LIKE '%sample-736%')"
+  },
+  {
+    "timestamp": "2025-09-17T00:30:00.000000",
+    "app_name": "ETLService",
+    "elapse_time": 1584,
+    "user_ip": "192.168.23.66",
+    "cfg_path": "cfgC",
+    "sql": "SELECT * FROM logs WHERE user_id = 398"
+  },
+  {
+    "timestamp": "2025-09-17T00:30:00.000000",
+    "app_name": "ETLService",
+    "elapse_time": 2164,
+    "user_ip": "192.168.43.92",
+    "cfg_path": "cfgC",
+    "sql": "SELECT * FROM logs WHERE user_id = 382"
+  },
+  {
+    "timestamp": "2025-09-17T00:30:00.000000",
+    "app_name": "JobRunner",
+    "elapse_time": 4435,
+    "user_ip": "192.168.24.95",
+    "cfg_path": "cfgA",
+    "sql": "SELECT * FROM logs WHERE user_id = 123"
+  }
+]

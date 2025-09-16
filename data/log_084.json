@@ -1,0 +1,162 @@
+[
+  {
+    "timestamp": "2025-09-16T14:00:00.000000",
+    "app_name": "ETLService",
+    "elapse_time": 650,
+    "user_ip": "192.168.219.4",
+    "cfg_path": "cfgC",
+    "sql": "SELECT event_id, payload FROM events WHERE user_id = 488 ORDER BY created_at DESC LIMIT 10 OFFSET 97"
+  },
+  {
+    "timestamp": "2025-09-16T14:00:00.000000",
+    "app_name": "DataProcessor",
+    "elapse_time": 1895,
+    "user_ip": "192.168.98.233",
+    "cfg_path": "cfgC",
+    "sql": "SELECT * FROM logs WHERE user_id IN (SELECT user_id FROM events WHERE payload LIKE '%sample-714%')"
+  },
+  {
+    "timestamp": "2025-09-16T14:00:00.000000",
+    "app_name": "ETLService",
+    "elapse_time": 129,
+    "user_ip": "192.168.114.132",
+    "cfg_path": "cfgC",
+    "sql": "UPDATE logs l SET data = 'sample-690', updated_at = NOW() WHERE l.user_id = 221 AND EXISTS (SELECT 1 FROM events e WHERE e.user_id = l.user_id AND e.payload LIKE '%sample-690%')"
+  },
+  {
+    "timestamp": "2025-09-16T14:00:00.000000",
+    "app_name": "ETLService",
+    "elapse_time": 420,
+    "user_ip": "192.168.19.49",
+    "cfg_path": "cfgB",
+    "sql": "SELECT * FROM logs WHERE user_id = 48"
+  },
+  {
+    "timestamp": "2025-09-16T14:00:00.000000",
+    "app_name": "ETLService",
+    "elapse_time": 4631,
+    "user_ip": "192.168.138.70",
+    "cfg_path": "cfgB",
+    "sql": "SELECT * FROM logs WHERE user_id IN (SELECT user_id FROM events WHERE payload LIKE '%sample-370%')"
+  },
+  {
+    "timestamp": "2025-09-16T14:00:00.000000",
+    "app_name": "JobRunner",
+    "elapse_time": 3136,
+    "user_ip": "192.168.52.252",
+    "cfg_path": "cfgA",
+    "sql": "SELECT * FROM logs WHERE user_id = 223"
+  },
+  {
+    "timestamp": "2025-09-16T14:00:00.000000",
+    "app_name": "ETLService",
+    "elapse_time": 3249,
+    "user_ip": "192.168.69.27",
+    "cfg_path": "cfgB",
+    "sql": "UPDATE logs l SET data = 'sample-209', updated_at = NOW() WHERE l.user_id = 236 AND EXISTS (SELECT 1 FROM events e WHERE e.user_id = l.user_id AND e.payload LIKE '%sample-209%')"
+  },
+  {
+    "timestamp": "2025-09-16T14:00:00.000000",
+    "app_name": "ETLService",
+    "elapse_time": 3111,
+    "user_ip": "192.168.15.98",
+    "cfg_path": "cfgB",
+    "sql": "UPDATE logs l SET data = 'sample-397', updated_at = NOW() WHERE l.user_id = 236 AND EXISTS (SELECT 1 FROM events e WHERE e.user_id = l.user_id AND e.payload LIKE '%sample-397%')"
+  },
+  {
+    "timestamp": "2025-09-16T14:00:00.000000",
+    "app_name": "ETLService",
+    "elapse_time": 835,
+    "user_ip": "192.168.196.180",
+    "cfg_path": "cfgA",
+    "sql": "SELECT user_id, COUNT(*) AS event_count FROM events WHERE user_id = 484 GROUP BY user_id HAVING COUNT(*) > 5"
+  },
+  {
+    "timestamp": "2025-09-16T14:00:00.000000",
+    "app_name": "DataProcessor",
+    "elapse_time": 4725,
+    "user_ip": "192.168.74.174",
+    "cfg_path": "cfgC",
+    "sql": "SELECT * FROM logs WHERE user_id IN (SELECT user_id FROM events WHERE payload LIKE '%sample-970%')"
+  },
+  {
+    "timestamp": "2025-09-16T14:00:00.000000",
+    "app_name": "JobRunner",
+    "elapse_time": 2037,
+    "user_ip": "192.168.84.234",
+    "cfg_path": "cfgB",
+    "sql": "SELECT user_id, COUNT(*) AS event_count FROM events WHERE user_id = 242 GROUP BY user_id HAVING COUNT(*) > 5"
+  },
+  {
+    "timestamp": "2025-09-16T14:00:00.000000",
+    "app_name": "JobRunner",
+    "elapse_time": 1852,
+    "user_ip": "192.168.153.103",
+    "cfg_path": "cfgC",
+    "sql": "SELECT * FROM logs WHERE user_id = 71"
+  },
+  {
+    "timestamp": "2025-09-16T14:00:00.000000",
+    "app_name": "DataProcessor",
+    "elapse_time": 4046,
+    "user_ip": "192.168.169.236",
+    "cfg_path": "cfgB",
+    "sql": "SELECT * FROM logs WHERE user_id IN (SELECT user_id FROM events WHERE payload LIKE '%sample-631%')"
+  },
+  {
+    "timestamp": "2025-09-16T14:00:00.000000",
+    "app_name": "ETLService",
+    "elapse_time": 2523,
+    "user_ip": "192.168.145.153",
+    "cfg_path": "cfgC",
+    "sql": "SELECT * FROM logs WHERE user_id IN (SELECT user_id FROM events WHERE payload LIKE '%sample-473%')"
+  },
+  {
+    "timestamp": "2025-09-16T14:00:00.000000",
+    "app_name": "JobRunner",
+    "elapse_time": 237,
+    "user_ip": "192.168.219.138",
+    "cfg_path": "cfgB",
+    "sql": "SELECT l.user_id, l.data, e.event_id, e.payload FROM logs l JOIN events e ON l.user_id = e.user_id WHERE l.user_id = 362 AND e.created_at >= NOW() - INTERVAL '7 DAY'"
+  },
+  {
+    "timestamp": "2025-09-16T14:00:00.000000",
+    "app_name": "JobRunner",
+    "elapse_time": 1476,
+    "user_ip": "192.168.15.11",
+    "cfg_path": "cfgC",
+    "sql": "SELECT * FROM logs WHERE user_id IN (SELECT user_id FROM events WHERE payload LIKE '%sample-252%')"
+  },
+  {
+    "timestamp": "2025-09-16T14:00:00.000000",
+    "app_name": "JobRunner",
+    "elapse_time": 1899,
+    "user_ip": "192.168.130.135",
+    "cfg_path": "cfgC",
+    "sql": "SELECT l.user_id, l.data, e.event_id, e.payload FROM logs l JOIN events e ON l.user_id = e.user_id WHERE l.user_id = 467 AND e.created_at >= NOW() - INTERVAL '7 DAY'"
+  },
+  {
+    "timestamp": "2025-09-16T14:00:00.000000",
+    "app_name": "ETLService",
+    "elapse_time": 1351,
+    "user_ip": "192.168.186.185",
+    "cfg_path": "cfgB",
+    "sql": "UPDATE logs l SET data = 'sample-100', updated_at = NOW() WHERE l.user_id = 256 AND EXISTS (SELECT 1 FROM events e WHERE e.user_id = l.user_id AND e.payload LIKE '%sample-100%')"
+  },
+  {
+    "timestamp": "2025-09-16T14:00:00.000000",
+    "app_name": "JobRunner",
+    "elapse_time": 2754,
+    "user_ip": "192.168.32.137",
+    "cfg_path": "cfgC",
+    "sql": "UPDATE logs l SET data = 'sample-936', updated_at = NOW() WHERE l.user_id = 348 AND EXISTS (SELECT 1 FROM events e WHERE e.user_id = l.user_id AND e.payload LIKE '%sample-936%')"
+  },
+  {
+    "timestamp": "2025-09-16T14:00:00.000000",
+    "app_name": "ETLService",
+    "elapse_time": 1637,
+    "user_ip": "192.168.208.55",
+    "cfg_path": "cfgA",
+    "sql": "SELECT * FROM logs WHERE user_id IN (SELECT user_id FROM events WHERE payload LIKE '%sample-915%')"
+  }
+]

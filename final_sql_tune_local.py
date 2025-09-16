@@ -209,7 +209,7 @@ if not avg_df.empty:
 top10_display = df.nlargest(10, "elapse_time").copy()
 top10_display["sql"] = top10_display["sql"].fillna("SQL 정보 없음")
 
-st.subheader("Top10 Elapse Time (SQL 항상 표시)")
+st.subheader("Top10 Elapse Time")
 gb = GridOptionsBuilder.from_dataframe(top10_display)
 gb.configure_selection("single", use_checkbox=False)
 gb.configure_column("sql", wrapText=True, autoHeight=True, width=400)
