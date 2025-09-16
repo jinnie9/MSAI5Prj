@@ -1,0 +1,82 @@
+[
+    {
+        "timestamp": "2025-09-15T12:00:00",
+        "app_name": "App1",
+        "elapse_time": 12.5,
+        "user_ip": "192.168.0.1",
+        "cfg_path": "CFG_A",
+        "sql": "SELECT * FROM users WHERE status='active';"
+    },
+    {
+        "timestamp": "2025-09-15T12:05:00",
+        "app_name": "App2",
+        "elapse_time": 8.7,
+        "user_ip": "192.168.0.2",
+        "cfg_path": "CFG_B",
+        "sql": "SELECT id, name FROM products WHERE price>100;"
+    },
+    {
+        "timestamp": "2025-09-15T12:10:00",
+        "app_name": "App3",
+        "elapse_time": 15.2,
+        "user_ip": "192.168.0.3",
+        "cfg_path": "CFG_C",
+        "sql": "SELECT order_id, amount FROM orders WHERE status='pending';"
+    },
+    {
+        "timestamp": "2025-09-15T12:15:00",
+        "app_name": "App4",
+        "elapse_time": 5.1,
+        "user_ip": "192.168.0.4",
+        "cfg_path": "CFG_A",
+        "sql": "SELECT * FROM inventory WHERE quantity<10;"
+    },
+    {
+        "timestamp": "2025-09-15T12:20:00",
+        "app_name": "App5",
+        "elapse_time": 18.3,
+        "user_ip": "192.168.0.5",
+        "cfg_path": "CFG_B",
+        "sql": "SELECT customer_id, name FROM customers WHERE city='Seoul';"
+    },
+    {
+        "timestamp": "2025-09-15T12:25:00",
+        "app_name": "App6",
+        "elapse_time": 10.0,
+        "user_ip": "192.168.0.6",
+        "cfg_path": "CFG_C",
+        "sql": "SELECT * FROM sales WHERE date>'2025-09-01';"
+    },
+    {
+        "timestamp": "2025-09-15T12:30:00",
+        "app_name": "App7",
+        "elapse_time": 9.8,
+        "user_ip": "192.168.0.7",
+        "cfg_path": "CFG_A",
+        "sql": "SELECT id, status FROM tasks WHERE completed=0;"
+    },
+    {
+        "timestamp": "2025-09-15T12:35:00",
+        "app_name": "App8",
+        "elapse_time": 20.1,
+        "user_ip": "192.168.0.8",
+        "cfg_path": "CFG_B",
+        "sql": "SELECT * FROM logs WHERE level='ERROR';"
+    },
+    {
+        "timestamp": "2025-09-15T12:40:00",
+        "app_name": "App9",
+        "elapse_time": 7.4,
+        "user_ip": "192.168.0.9",
+        "cfg_path": "CFG_C",
+        "sql": "SELECT product_id, stock FROM inventory WHERE stock<5;"
+    },
+    {
+        "timestamp": "2025-09-15T12:45:00",
+        "app_name": "App10",
+        "elapse_time": 11.7,
+        "user_ip": "192.168.0.10",
+        "cfg_path": "CFG_A",
+        "sql": "SELECT name, email FROM users WHERE subscribed=1;"
+    }
+]
