@@ -20,8 +20,8 @@
 ## TO-BE
 **1) 화면 조회주기 변경 및 DataSource 설정**
    - 화면 조회주기 변경
-    
-    <img width="733" height="94" alt="image" src="https://github.com/user-attachments/assets/153f0478-7f38-4dca-89eb-e7116a90f342" /> 
+     
+   <img width="733" height="94" alt="image" src="https://github.com/user-attachments/assets/153f0478-7f38-4dca-89eb-e7116a90f342" /> 
   - BlobStorage : http호출(AzureFunction)을 통한 JSON 응답 수신 하여 BlobStorage에 저장
   - 로컬 JSON : Python을 통한 Random으로 생성된 JSON 객체로 처리  
 
