@@ -22,11 +22,13 @@
    - 화면 조회주기 변경
      
    <img width="733" height="94" alt="image" src="https://github.com/user-attachments/assets/153f0478-7f38-4dca-89eb-e7116a90f342" /> 
+
   - BlobStorage : http호출(AzureFunction)을 통한 JSON 응답 수신 하여 BlobStorage에 저장
   - 로컬 JSON : Python을 통한 Random으로 생성된 JSON 객체로 처리  
 
     <img width="203" height="83" alt="image" src="https://github.com/user-attachments/assets/9e017fc9-2415-4900-b118-b5e441e9c475" />
     <img width="390" height="153" alt="image" src="https://github.com/user-attachments/assets/8325e619-cb71-46bc-8929-b6e9ac293136" />
+    
 
 **2) ElapseTime 그래프 및 리스트 조회**
    - 조회조건 : 시작일 / 종료일 / cfg_path
